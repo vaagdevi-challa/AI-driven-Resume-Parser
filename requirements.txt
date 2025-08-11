@@ -1,0 +1,28 @@
+# File parsing
+python-docx
+pymupdf  # For PDFs
+python-multipart  # Required for file uploads via FastAPI
+
+# Web backend
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+pydantic[email]
+email-validator  # Required for email validation in Pydantic
+
+# Authentication & security
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
+passlib==1.7.4
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+
+# Data processing
+pandas
+cohere
+python-dotenv
