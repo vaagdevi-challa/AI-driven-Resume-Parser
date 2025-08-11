@@ -29,29 +29,39 @@ Built in **Python** with seamless database integration, it automates resume proc
 ## ⚙️ Installation
 
 ### Clone the repo
+```bash
 git clone https://github.com/vaagdevi-challa/AI-driven-Resume-parser.git  
 cd AI-driven-Resume-parser
+```
 
 ### Create virtual environment
+```bash
 python -m venv venv  
 source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
 
 ### Install dependencies
+```bash
 pip install -r requirements.txt  
+```
 
 ## Environment Variables
 # Create a .env file in the project root with the following:
-
+```bash
 COHERE_API_KEY=your_cohere_api_key  
 DATABASE_URL=postgresql+psycopg2://user:password@localhost:5432/resume_db
+```
 
 ## Usage
 ### Parse a single resume
+```bash
 python scripts/llm_parser.py --file data/sample_resume.pdf
+```
 
 ### Parse all resumes in a folder
+```bash
 python scripts/llm_parser.py --folder data/
-
+```
 ## Future Improvements
 - Web-based interface for uploading and viewing parsed resumes.
 - Integration with applicant tracking systems (ATS).
